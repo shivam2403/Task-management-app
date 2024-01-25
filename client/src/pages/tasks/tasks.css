@@ -1,0 +1,147 @@
+.task{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(67, 67, 67);
+}
+
+.e_wrap{
+    width: 100%;
+    padding: 30px;
+    height: 100vh;
+}
+
+.e_ul{
+    display: flex;
+    border: 2px solid #db0000;
+    width: 90%;
+    margin: 20px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+    color: white;
+}
+
+.e_li{
+    flex: 1;
+    margin: 20px 0;
+}
+
+.e_ul:hover{
+    background-color: #db0000;
+    color: white;
+}
+
+.e_ul_sp{
+    display: flex;
+    width: 90%;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 5px 10px;
+    color: white;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}
+
+.e_mid{
+    margin-top: 20px;
+}
+
+.e_top{
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.e_top button{
+    position: absolute;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #db0000;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.e_top button:hover{
+    background-color: #db0000;
+    color: white;
+    transition:0.3s ease-in-out;
+    border: 2px solid #db0000;
+}
+
+.e_form_wrap{
+    width: 55%;
+    height: 80vh;
+    align-self: center;
+    background-color: rgb(50, 49, 49);
+    /* border: 2px solid purple; */
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 110px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    gap: 40px;
+    font-size: 24px;
+    transition: 0.3s ease-in;
+}
+
+.e_form_wrap span{
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    padding: 5px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+
+.e_form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.e_input{
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
+}
+
+.e_btn{
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    color: #db0000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.e_btn:hover{
+    background-color: #db0000;
+    color: white;
+}

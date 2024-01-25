@@ -1,0 +1,49 @@
+.home{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgb(67, 67, 67);
+    height: 100vh;
+    color: white;
+    
+}   
+
+.h_wrap{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.h_info{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.h_intro_title{
+  font-size: 45px;
+}
+
+.h_btn{
+  width: max-content;
+  padding: 10px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #db0000;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.h_btn:hover{
+  background-color: #db0000;
+  color: white;
+}
+
+.h_intro_desc{
+  font-size: 24px;
+}
