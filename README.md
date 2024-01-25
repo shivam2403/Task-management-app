@@ -1,3 +1,6 @@
+Deployed Link - https://65b28ae53880fd008987de91--heroic-klepon-f13829.netlify.app/
+
+Breif Explanation-
 1. In this project there are 5 pages and 3 modals. Login page, Register page, HomePage, Tasks page and SingleTask page. For modals so first modal for adding tasks, second is for updating tasks and last one is for deleting tasks.
 2. Users can login and signup to the app also they can add delete and upadate their tasks.
 3. After login users will be directed to the homePage where there are instructions written for using the app. There is also a button which will redirect user to their tasks(Tasks page).
