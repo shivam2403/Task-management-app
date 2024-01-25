@@ -25,7 +25,7 @@ const SingleTask = () => {
   useEffect(()=>{
     const fetchTask=async(req,res)=>{
       try {
-        const res=await axios.get(`http://localhost:5000/api/v1/task/${id}`);
+        const res=await axios.get(`https://taskmanagement-backend-11sa.onrender.com/api/v1/task/${id}`);
         setTask(res.data);
         console.log(res.data);
       } catch (error) {
@@ -41,7 +41,7 @@ const SingleTask = () => {
 
     try {
       console.log(id);
-      const res=await axios.put(`http://localhost:5000/api/v1/task/${id}`,{
+      const res=await axios.put(`https://taskmanagement-backend-11sa.onrender.com/api/v1/task/${id}`,{
         title:title,
         category:category,
         description:description,
@@ -58,7 +58,7 @@ const SingleTask = () => {
   const handleDelete=async()=>{
 
     try {
-      await axios.delete(`http://localhost:5000/api/v1/task/${id}`);
+      await axios.delete(`https://taskmanagement-backend-11sa.onrender.com/api/v1/task/${id}`);
       setOpenDelete(false);
       navigate('/tasks');    
     } catch (error) {

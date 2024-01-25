@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const handleLogout=async()=>{
     try {
-      await axios.post("http://localhost:5000/api/v1/auth/logout");
+      await axios.post("https://taskmanagement-backend-11sa.onrender.com/api/v1/auth/logout");
 
       logout(user);
 

@@ -26,7 +26,7 @@ const Tasks = () => {
   useEffect(()=>{
     const fetchTask=async()=>{
       try {
-        const res=await axios.get(`http://localhost:5000/api/v1/task/by-user/${user._id}`);
+        const res=await axios.get(`https://taskmanagement-backend-11sa.onrender.com/api/v1/task/by-user/${user._id}`);
         setTasks(res.data);
         console.log(res.data)
       } catch (error) {
@@ -37,15 +37,11 @@ const Tasks = () => {
     fetchTask();
   },[])
 
-  for (let i = 0; i < tasks.length; i++) {
-    total += tasks[i].amount;
-  }
-
   const handleAdd=async(e)=>{
     e.preventDefault();
 
     try {
-      const res=await axios.post('http://localhost:5000/api/v1/task',{
+      const res=await axios.post('https://taskmanagement-backend-11sa.onrender.com/api/v1/task',{
         title:title,
         category:category,
         description:description,
@@ -54,7 +50,7 @@ const Tasks = () => {
         user:user._id,
       })
 
-      const resp = await axios.get(`http://localhost:5000/api/v1/task/by-user/${user._id}`);
+      const resp = await axios.get(`https://taskmanagement-backend-11sa.onrender.com/api/v1/task/by-user/${user._id}`);
       setTasks(resp.data);
 
       setOpen(false);
